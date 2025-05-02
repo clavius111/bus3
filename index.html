@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>황상종점 버스 시간표</title>
+    <style>
+        #schedule-frame {
+            width: 100%;
+            min-height: 600px;
+            border: none;
+        }
+        #loading {
+            text-align: center;
+            margin: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>황상종점 버스 시간표</h1>
+    <div id="date-info"></div>
+    <div id="loading">시간표를 불러오는 중...</div>
+    <iframe id="schedule-frame" style="display:none"></iframe>
+    <script src="schedule.js"></script>
+</body>
+</html>
