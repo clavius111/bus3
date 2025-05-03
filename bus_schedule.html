@@ -197,7 +197,12 @@
             return upcomingBuses.slice(0, 3);
         }
 
-        
+        function displayBuses() {
+            const upcomingBuses = getNextBuses();
+            const busInfoDiv = document.getElementById('bus-info');
+            busInfoDiv.innerHTML = `<h2></h2>${upcomingBuses.map(bus => `<div>${bus.departureTime} - ${bus.busNumber}</div>`).join('')}`;
+        }
+
         function displayWaitingBuses() {
             const waitingTable = document.getElementById('waiting-table');
             const now = new Date();
